@@ -1,0 +1,390 @@
+*{
+  box-sizing: border-box;
+  padding: 0; 
+  margin:0;
+}
+html,body{
+  width: 100%;
+  
+}
+
+html{
+  background-color: rgba(0,0,0,.02);
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px dashed #c5c5c5;
+  border-bottom: 1px dashed #f7f7f7;
+}
+
+footer hr{
+  margin: 10px 0;
+}
+.logout{
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin: 20px 0 20px 12px;
+  color: #888;
+}
+.copyright{
+  color: orange;
+  text-align: center;
+  margin-top: 100px;
+}
+#username{
+    margin: 20px auto;
+    color: #b83f45;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.learn a {
+  font-weight: normal;
+  text-decoration: none;
+  color: #b83f45;
+}
+
+.source-links a{
+  font-size: 12.9px;
+  font-weight: 380;
+}
+
+.learn a:hover {
+  text-decoration: underline;
+  color: #787e7e;
+}
+
+.learn h3,
+.learn h4,
+.learn h5 {
+  margin: 10px 0;
+  color: #000;
+}
+
+.learn h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.learn h4 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.learn h5 {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 380;
+}
+
+.learn ul {
+  padding: 0;
+  margin: 0 0 30px 25px;
+  font-size: 13px;
+}
+
+.learn li {
+  line-height: 20px;
+}
+
+.learn p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#issue-count {
+  display: none;
+}
+
+.quote {
+  border: none;
+  margin: 20px 0 60px 0;
+}
+
+.quote p {
+  font-style: italic;
+}
+
+.quote p:before {
+  content: '“';
+  font-size: 50px;
+  opacity: .15;
+  position: absolute;
+  top: -20px;
+  left: -30px;
+}
+
+.quote p:after {
+  content: '”';
+  font-size: 50px;
+  opacity: .15;
+  position: absolute;
+  bottom: -42px;
+  right: -10px;
+}
+
+.quote footer {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+}
+
+.quote footer img {
+  border-radius: 3px;
+}
+
+.quote footer a {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.speech-bubble {
+  position: relative;
+  padding: 10px;
+  background: rgba(0, 0, 0, .04);
+  border-radius: 5px;
+}
+
+.speech-bubble p{
+  font-weight: 500;
+  font-size: 15px;
+}
+
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 40px;
+  border: 13px solid transparent;
+  border-top-color: rgba(0, 0, 0, .04);
+}
+footer{
+
+}
+footer em {
+  font-size: 13px;
+}
+
+
+.learn li a{
+  font-size: 13px;
+}
+
+.learn {
+  position: absolute;
+  width: 272px;
+  top: 8px;
+  left:-280px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .9);
+  transition-property: left;
+  transition-duration: 500ms;
+}
+
+
+.todos{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: relative;
+  flex-direction:column;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  transition-property: margin-left,width;
+  transition-duration: 500ms,500ms;
+}
+
+
+
+.todos > span:first-child{
+  font-size: 95px;
+  color: rgba(175, 47, 47, 0.15);
+}
+
+.input {
+  font-size: 0;
+  width: 550px;
+  height: 66px;
+  box-shadow:0 0px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1), inset 0 -3px 5px rgba(0,0,0,0.03);
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.input > span:first-child {
+  display: inline-block;
+  visibility:hidden;
+  font-size: 25px;
+  height: 66px;
+  width: 66px;
+  text-align: center;
+  line-height: 66px;
+  color:rgba(0, 0, 0, .2);
+}
+
+.input input {
+  outline: none;
+  height: 80%;
+  border: none;
+  font-size: 25px;
+  width: calc(100% - 66px);
+}
+
+.input input::-webkit-input-placeholder {
+  font-style:italic;
+  color:rgba(0, 0, 0, .2);
+}
+
+
+
+
+@media (min-width: 900px) {
+  .learn {
+    left: 8px;
+  }
+}
+
+.clone{
+  box-shadow:  0 50px 80px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 550px;
+  font-size: 23.9px;
+  line-height: 35px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: none;
+  border-bottom: 1px solid #ededed;
+  align-items: center;
+  word-break:break-all;
+  background-color: white;
+}
+
+.clone div{
+  cursor: pointer;
+  display: none;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 15px;
+  background-image: url(../picture/X.png);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+
+.clone:hover div {
+  display: block;
+}
+
+.clone .reinput{
+  height: 50px;
+  font-size: 25px;
+  outline: none;
+  border: 1px solid black;
+  background-color: white;
+  width: calc(100% - 69px);
+  margin:0 3px 0 66px;
+  padding-right: 32px;
+  box-shadow:inset 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.clone > span:nth-of-type(1){
+  line-height: 66px;
+  width: 66px;
+  height: 66px;
+  flex-shrink:0;
+  text-align: center;
+}
+
+.clone  .question{
+  display: block;
+  padding-right: 32px;
+  flex-grow: 1;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.clone span:nth-of-type(1) span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33px;
+  height: 33px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.tick_on {
+  background-image: url(../picture/gou.png);
+  background-position: center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+.todos .clone .line_through {
+  text-decoration:line-through;
+  color:#d9d9d9;
+  transition: .3s;
+}
+
+.tail {
+  position: absolute;
+  display: none;
+  line-height: 37px;
+  text-align: center;
+  font-size: 13.5px;
+  color: rgb(119, 119, 119);
+  z-index: 1000;
+  position: absolute;
+  height: 37px;
+  width: 550px;
+  bottom: -37px;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow:  0 50px 80px 0 rgba(0, 0, 0, 0.1),
+               0 10px 0 -5px #f6f6f6, 
+               0 9px 1px -3px rgba(0, 0, 0, 0.1), 
+               0 16px 0 -6px #f6f6f6, 
+               0 17px 2px -6px rgba(0, 0, 0, 0.1), 
+               0 20px 30px .5px rgba(0, 0, 0, 0.1);
+}
+
+.tail a {
+  padding: 2px 8px;
+  margin:0 5px; 
+  border: 1px solid rgba(255,255,255,0);
+  color: rgb(119, 119, 119);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.tail .item {
+  position: absolute;
+  left:20px;
+}
+
+.tail .clear_completed {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.tail a:nth-of-type(1){
+  border-color:orange;
+}
+
+.tail a:hover {
+  border-color:orange;
+}

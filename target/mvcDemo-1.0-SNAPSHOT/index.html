@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./src/todolist.css">
+    <title>todolist</title>
+</head>
+
+<body>
+
+<div class="todos">
+    <span>todos</span>
+    <div>
+        <p id="username"></p>
+        <a href="/user/logout" class="logout">退出登录</a>
+    </div>
+
+    <div class="input">
+        <span>√</span>
+        <input type="text" autofocus="autofocus" autocomplete="off" placeholder="What needs to be done?" class="keydown">
+    </div>
+    <div class="clone"><div class="X"></div><span><span class="tick"></span></span><span class="question"></span></div>
+    <div class="tail">
+        <span class="item">0</span>
+        <a class="all" href="#All">All</a>
+        <a class="active" href="#Active">Active</a>
+        <a class="completed" href="#Completed">Completed</a>
+        <span class="clear_completed">Clear completed</span>
+    </div>
+</div>
+<p class="copyright">copyRight © 计科B163 - 郭磊 学号:201607014334</p>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script src="./lib/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="./src/todolist.js"></script>
+</body>
+
+</html>
